@@ -1,0 +1,15 @@
+const { app, BrowserWindow } = require('electron');
+const path = require('path');
+let mainWindow;
+const { setupWorkingDirectory } = require('./utils/dirs')
+
+app.on('ready', () => {
+    setupWorkingDirectory();
+    mainWindow = new BrowserWindow({
+        show: false
+    });
+    mainWindow.loadURL(path.join('file://', __dirname, 'index.html'));
+    mainWindow.on('ready-to-show', () => {
+        mainWindow.show();
+    })
+})

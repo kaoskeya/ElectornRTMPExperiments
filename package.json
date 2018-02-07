@@ -1,0 +1,24 @@
+{
+  "name": "electornrtmpexperiments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron index.js",
+    "package": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaoskeya/ElectornRTMPExperiments.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaoskeya/ElectornRTMPExperiments/issues"
+  },
+  "homepage": "https://github.com/kaoskeya/ElectornRTMPExperiments#readme",
+  "devDependencies": {
+    "electron": "^1.8.2"
+  }
+}
